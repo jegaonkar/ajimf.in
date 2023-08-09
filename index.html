@@ -140,39 +140,6 @@
 </head>
 
 <body>
-<script>
-/*
-	$(document).ready(function(){
-		$("#myModal").modal('show');
-	});
-    */
-</script>
-</head>
-<body>
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Subscribe our Newsletter</h4>
-            </div>
-            <div class="modal-body">
-				<p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>    
-    
-    
 <div class="icon-bar">
       <a href="https://www.facebook.com/AIJMFOfficial/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
       <a href="https://www.youtube.com/channel/UCzqwLSlkPLLKeF8bKaxHK-g" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> 
@@ -182,7 +149,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" style="background-color: rgba(0,0,0,0.5)">
 
     <div class="container-fluid">
           
@@ -199,11 +166,13 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li class="menu-active"><a href="http://aijmf.in/">Home</a></li>
+          <li><a href="http://aijmf.in/#about">About</a></li>
           <!--<li><a href="#services">Services</a></li>-->
           <li><a href="http://aijmf.in/web/web_gallery">gallary</a></li>
-          <li><a href="#team">Board of Directors</a></li>
+          <li><a href="http://aijmf.in/#team">Board of Directors</a></li>
+          <li class="menu-has-children"><a href="http://aijmf.in/web/news_bulletine">News</a></li>
+          <li class="menu-has-children"><a href="http://aijmf.in/web/magazine">Magazine</a></li>
 <!--          <li class="menu-has-children">
               <a href="">Drop Down</a>
             <ul>
@@ -213,12 +182,13 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li>-->
-          <li class="menu-has-children">
-              <a href="http://aijmf.in/web/news_bulletine">News</a>
-          </li>
-          <li class="menu-has-children">
-              <a href="http://aijmf.in/web/magazine">Magazine</a>
-          </li>
+         <!--  <li class="menu-has-children">
+            <a href="">Membership</a>
+            <ul>
+                <li><a href="http://aijmf.in/#">Free Membership</a></li>
+                <li><a href="http://aijmf.in/#">Institute Membership</a></li>
+            </ul>
+        </li> -->
 <!--          <li class="menu-has-children">
              <a href="">branch</a>
             <ul>
@@ -261,166 +231,9 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active" style="background-image: url('http://aijmf.in/resources/assets/img/intro-carousel/1.jpg');">
-            <div class="carousel-container">
-                <!--div class="carousel-content">
-                    <h2>राष्ट्रीय चिंतन महाअधिवेशन</h2>
-                    <p>13-14 जून 2020</p>
-                    <a href="http://aijmf.in/web/adhiveshan" class="btn-get-started scrollto">View Details</a>
-                </div-->
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('http://aijmf.in/resources/assets/img/intro-carousel/2.jpg ');">
-            <div class="carousel-container">
-              <!-- <div class="carousel-content">
-                <h2>Jain Community</h2>
-                <p>Dedicatedly working for “Empowerment of Jain Community” through ‘Minority Welfare Schemes’ of Government of India as well as various State Governments.</p> -->
-                <!--<a href="#featured-services" class="btn-get-started scrollto">Get Started</a>-->
-              <!-- </div> -->
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('http://aijmf.in/resources/assets/img/intro-carousel/3.jpg');">
-            <div class="carousel-container">
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('http://aijmf.in/resources/assets/img/intro-carousel/4.jpg');">
-            <div class="carousel-container">
-             
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('http://aijmf.in/resources/assets/img/intro-carousel/5.jpg');">
-            <div class="carousel-container">
-              
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- #intro -->
-        
-  <main id="main">
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <header class="section-header">
-          <h3>About Us</h3>
-          <p style="text-align: justify; font-size:18px;font:cambria; " >
-          केंद्र सरकार की इस राजपत्रिय अधिसुचना से 'जैन' धर्म के स्वतंत्र अस्तित्व की पुष्टि के साथ-साथ जैन समाजको एवं जैन समाज के सभी धार्मिक संस्थान तथा शैक्षणिक संस्थानों को संविधान की धारा 25 से 30 तक मे वर्णित विशेषाधिकार एवं संरक्षण भी प्राप्त हुए है ।  <span id="dots">..... </span><br>
-            <br>
-
-            ‘जैन – समाज’को केन्द्र सरकार द्वारा अल्पसंख्याक दर्जा मिलने से समाजबंधुओं को इसका क्या लाभ है.....? हमारे तीर्थ स्थलों को किस प्रकार के लाभ मिल सकता है, किस प्रकार अब उन्हें सुरक्षित रखा जा सकता है और शैक्षणिक संस्थाओं को क्या लाभ मिल सकता है ऐसे अनेक प्रश्न जैन बंधुओं के हृदय मैं अंतर्निहित हैं। <span id="dots">..... </span><br>
-          <br>
-
-          <span id="more">‘जैन समाज’ जो कि हमेशा से देता आया है, उसे सरकार से कुछ लेने की क्या आवश्यकता है ? हमैं अनुदान क्यों चाहिए, दर्जा मिलने से हम देश के मुख्य प्रवाह से अलग तो नहीं होंगे, ऐसे भी कुछ विचार समाजके कुछ बंधुओं के हृदय मैं घर कर रहे है। अर्थात् तीर के समान चुभ रहे हैं। <br>
-          <br>
-
-          ‘जैन समाज’ सर्व साधारण रूप से सक्षम है परन्तु समाजके कुछ लोग ऐसे भी हैं जो निम्न आय की श्रेंणी मैं आते हैं, ऐसे परिवारों के बच्चों के लिये उच्च शिक्षा के लिए, व्यापार मैं वृद्धि के लिये, स्वयं रोजगार के लिये अल्पसंख्याक दर्जा अत्यधिक महत्वपूर्ण है। वैसे तो भारत में सर्वाधिक दान देनेवाले एवं सरकारों को सर्वाधिक राजस्व देनेवालों में जैन समाज शीर्ष स्थान पर है। लेकिन यह स्थान समाज के 30 प्रतिशत उच्च एवं अतिउच्च आय श्रेणी के लोगों से प्राप्त है। <br> <br>
-
-          केंद्र एवं राज्य सरकारों की विभिन्न योजनाओं में पहली कक्षा से पी.एच.डी, एम.फील तक सभी तरह की पढाई के लिए प्रतिवर्ष 1 हजार से 50 हजार तक की छात्रवृत्ति योजनाये। महिला कल्याण योजनाये, धार्मिक संस्थान, समाजिक संस्थानों के विकास की योजनाये, शिक्षा संस्थाओं को 2 लाख रूपये से 3 करोड तक का अनुदान। व्यापारी-उद्योजकों के लिए वार्षिक 6 प्रतिशत ब्याज से 30 लाख रूपये तक का ॠण, महिला एवं युवाओंको कौशल विकास हेतु अनुदान, प्राचीन तीर्थ एवं प्राचीन ग्रंथो के रखरखाव एवं जीर्णोध्दार हेतु अनुदान, समाज भवन के लिए अनुदान जैसी अनेक महत्वपूर्ण योजनाओं का समावेश है। <br>
-          <br>
-
-          समाज के 50 प्रतिशत लोग सामान्य श्रेणी में आते है, उन्हे इन कल्याणकारी योजनाओं का लाभ हो सकता है। राष्ट्रीय स्तर पर यह दर्जा प्राप्त होने के बावजुद भी पिछले चार वर्षां में विभिन्न योजनाओं मेंजैन लाभार्थीयों की संख्या अल्प है। इसका मुल कारण जानकारी का अभाव है। <br> <br>
-
-          यह जानकारी भारतवर्ष के सभी जैन परिवारों तक पहुँचाने एवं योजनाओं का लाभ लेने में मार्गदर्शन एवं सहयोग हेतु समस्त जैन समाज की राष्ट्रीय स्तर पर ऐसी शिखर संस्था कार्यरत है, जो मुख्यतः अल्पसंख्याक योजनाओं के क्रियान्वयन एवं केंद्र एवं राज्य सरकारों के साथ नियमित और प्रभावी समन्वय का कार्य करती है। <br> <br>
-
-          राष्ट्रीय स्तर पर जैनसमाज को अल्पसंख्याक का दर्जा प्राप्त होने से केंद्र तथा राज्य सरकारों की अल्पसंख्याक समाज के विकास हेतु बनायी सभी योजनाओं का लाभ जैनसमाज को भी मिलेगा।  <br> <br>
-
-          ‘जैन समाज’को राष्ट्रीय स्तरपर अल्पसंख्याक समाज का दर्जा प्राप्त होने से जैन समाजका हर एक घटक सक्षम होगा और जैन समाजका सर्वांगीण विकास होगा। लेकिन यह तभी सम्भव है जब अल्पसंख्यांक विषय पर जैन समाजमैं जागरूकता आयेगी और सरकार द्वारा घोषित योजनाओं की जानकारी समाजतक पहुँचेगी। <br>
-          <br>
-
-          ऑल इंडिया जैन मायनोरीटी फेडरेशन(AIJMF) के नाम से राष्ट्रीय शिखर संस्था के रूप में पंजीकृत यह संस्था ‘जैन’ समाज की विभिन्न धार्मिक, सामाजिक, शैक्षणिक, संस्थाओं के सहयोग से अपने कार्य को गतिमान बनाने जा रही है। जैन समाजको अल्पसंख्याक दर्जा मिलने से जैन समाजका नया पर्व शुरू हो गया है और हमैं आशा ही नहीं पूर्ण विश्वास है कि जैन समाजजो पहले से ही सक्षम था वो अब और अधिक सक्षम बनकर देश की उन्नति मैं अपना योगदान देगा। अल्पसंख्याक का दर्जा मिलने से जैन समाजजो लाखों वर्षों से एक स्वतंत्र धर्म है उसको मान्यता प्राप्त हो गयी है और इससे जैन समाज अत्यधिक आनंदित है। <br>
-          <br>
-
-          सभी प्रमुख शहरों मैं जैन अल्पसंख्याक फेडरेशन के माध्यम से, अल्पसंख्याक दर्जा मिलने से जैन समाजको प्राप्त होने वाली सुविधाओं और योजनाओं की जानकारी देने हेतु विशेष कार्यालय की स्थापना की जायेगी। जहाँ समाजके लोगों को योजनाओं से अवगत कराया जायेगा, जिसके लिये विभिन्न किताबे एवं दरमहा मॅगेझीन प्रकाशित की जा रही है। जिसके माध्यम से लोग इन योजनाओं का लाभ प्राप्त कर सकेंगे। इस प्रकाशित की जा रही किताबो एवं मॅगेझीन मैं सरकार द्वारा घोषित विभिन्न योजनाओं की जानकारी तथा योजनाओं का लाभ लेने हेतु दिशानिर्देश होंगे। जैसे कि विद्यार्थियों के लिये छात्रवृति, उच्च शिक्षा के लिये लोन, व्यापारियों के लिए अल्प ब्याज पर ॠण, महिलाओं के लिये विविध योजनायें, शिक्षण संस्था, धार्मिक संस्था के लिये उपलब्ध अनुदान तथा विशेष सुरक्षा योजनायें और ऐसी अनेक योजनाओं की विस्तार से जानकारी इन किताबों एवं मॅगेझीन मैं उपलब्ध होगी। यह मॅगेझीन जैन समाजके प्रत्येक घटक के लिए अत्यंत उपयुक्त साबित होगी। <br> <br>
-
-          संस्थाद्वारा इन सभी योजनाओं के प्रत्यक्ष क्रियान्वयन एवं समन्वयन हेतु भारतवर्ष के सभी गाँवो, शहरों तक शाखाये बनायी जा रही है, इन शाखाओं के माध्यम से समाज के सभी लोगों को इन योजनाओं का लाभ पहुँचाने का कार्य किया जायेगा। <br> <br>
-
-          इस तरह हर उपलब्ध संसाधनों के सहाय से योजनाओं का प्रचार-प्रसार एवं प्रत्यक्ष लाभ पहुँचाने तक के सभी कार्य ऑल इंडिया जैन मायनोरीटी फेडरेशन (AIJMF) की शाखाओं के नेटवर्क के माध्यम से किया जायेगा। <br> <br>
-
-          समस्त जैन समाज को यह सभी लाभ आसानी से मिल सके इसके लिए AIJMF की सामान्य सदस्यतः पुर्णतः निःशुल्क है। सभी सदस्यों को अल्पसंख्याक फेडरेशन का प्रमाणपत्र भी मिलेगा। <br> <br>
-
-          आईये, इस संगठन को मजबुत बनाये, जैन समाज को सक्षम बनाये। अपने क्षेत्र में AIJMF की शाखा का गठन करे। <br> <br>
-
-          ललित गांधी
-          राष्ट्रीय अध्यक्ष - AIJMF
-          AIJMF की शाखा स्थापनासंबंधी आवश्यक जानकारी हेतु आवश्यक प्रकिया <br>
-            1. ऑल इंडिया जैन मायनोरिटी फेडरेशन (AIJMF), दिल्ली, राष्ट्रीय स्तर पर कार्यरत ‘जैन’ समाज कि शिखर संस्था के रूप में पंजीकृत न्यास (ट्रस्ट) है। <br> 
-            2. इस संगठन का प्रमुख उद्देश अल्पसंख्याक दर्जा से प्राप्त विशेषाधिकार, शिक्षा हेतु अनुदान/स्कॉलरशिप, व्यापार, उद्योग, खेती इ. के लिए अल्प ब्याज पे लोन एवं विभिन्न सरकारी योजनाओं का लाभ ‘जैन’समाज के हर व्यक्ति तक पहुँचाने के लिए प्रचार, प्रसार, सहयोग और सरकारी विभागों से समन्वय करना है। <br>
-            3. यह संगठन शाखा, जिला समिति, राज्य समिति और राष्ट्रीय समिति ऐसे चार स्तरोंपर कार्यरत रहेगा। शाखाओं कि मान्यता राष्ट्रीय कार्यालय द्वारा ही दि जायेगी। <br> 
-           4. सामान्य रूप से ग्रामपंचायत स्तर के छोटे गाँवो में एक शाखा तथा नगरपरिषद/ नगरपालीका/ नगरनिगम/ महानगरपालिका स्तर के क्षेत्रों में वार्ड स्तर पर एक शाखा अथवा मंदिर/स्थानक/भवन निहाय एक एक शाखा खोली जा सकती है। एक शाखा स्थापना हेतु न्युनतम शहरी क्षेत्रों में 50 सदस्य एवं ग्रामीण क्षेत्रों में 25 सदस्य होना आवश्यक है। <br> 
-           5. शाखा मान्यता हेतु विहित आवेदन पत्र, न्युनतम 21 सदस्यों के सदस्यता आवेदन पत्र के साथ राष्ट्रीय प्रशासकीय कार्यालय को भेजना है। <br>
-           6. शाखा स्तर पर पदाधिकारीओंका कार्यकाल 1 अथवा 2 साल तक का रहेगा। <br> 
-            7. प्रत्येक जिले में कार्यरत विभिन्न शाखाओं के प्रतिनिधियों में से जिला स्तरीय समिति गठीत होगी । जिला स्तरीय समितियों के प्रतिनिधियों में से राज्यस्तरीय समिति गठीत होगी। राज्यस्तरीय प्रतिनिधियों में से राष्ट्रीय स्तर कि समिति गठीत होगी। <br>
-           8. शाखा, स्थानीय स्तर पर आवश्यकतानुसार विभिन्न उपक्रम संचालीत करेगी। राष्ट्रीय मुख्यालय द्वारा भेजे गये उपक्रमों का संचालन अनिवार्य है। <br> 
-            9. विभिन्न सरकारी योजनाओं का लाभ सभी को मिले, इसलिए इस संगठन में शाखा स्तर के पदाधिकारीयोंकी भुमिका सबसे महत्वपूर्ण है और आपका यह योगदान जैन समाज के हर व्यक्ति को सक्षम बनाते हुए समाज को संगठीत एवं सक्षम बनाने में सहायक रहेगा इसका विश्वास है। 
-          
-        </span></p>
+  <section style="margin-top: 100px">
     
-          Please click on the Button to know more about us...
-          <button type="button" class="btn btn-success" onclick="myFunction()" id="button">Read more</button>
-
-        </header>
-      </div>
-    </section><!-- #about -->
-    
-
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeIn">
-      <div class="container text-center">
-          <div class="col-lg-12" id="quick">
-              <h4 align="center" class="text-white">Quick Links</h4>
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">
-                      <a href="http://www.minorityaffairs.gov.in/schemesperformance/scholarship-schemes" target="_blank">Scholarship Scheme</a>
-                    </li>
-                    <li data-filter=".filter-app"><a href="http://www.minorityaffairs.gov.in/schemesperformance/maulana-azad-national-fellowship-minority-students-scheme" target="_blank">Azad national Fellowship</a></li>
-                    <li data-filter=".filter-card"><a href="http://www.jainminoritycell.org/Jain/PadhoPardesh.aspx" target="_blank">Maulana Azad National Fellowship (MANF)</a></li>
-                    <li data-filter=".filter-web"><a href="http://www.minorityaffairs.gov.in/schemesperformance/free-coaching-and-allied-scheme-minority-communities-students" target="_balnk">Free Coaching and Allied Scheme</a></li>
-                    <li class="cta-btn" data-filter=".filter-web"><a href="http://www.minorityaffairs.gov.in/schemesperformance/support-students-clearing-prelims-conducted-upscsscstate-public-service-commissionpsc-etc" target="_blank">Nai Udaan - Clearing Prelims conducted by UPSC , SSC, SPSC</a></li> 
-                    <li class="cta-btn" data-filter=".filter-web"><a href="http://www.minorityaffairs.gov.in/schemesperformance/seekho-aur-kamaolearn-earn-scheme-skill-development-minorities" target="_blank">Seekho aur Kamao (Learn & Earn)</a></li>
-                    <li class="cta-btn" data-filter=".filter-web"><a href="http://www.minorityaffairs.gov.in/schemesperformance/usttad-upgrading-skills-and-training-traditional-arts-crafts-development" target="_blank">USTTAD (Upgrading the Skills and Training in Traditional Arts / Crafts for Development)</a></li>
-                    <li class="cta-btn" data-filter=".filter-web"><a href="http://www.minorityaffairs.gov.in/schemesperformance/nai-manzil-social-assesment-and-social-management-framework">Nai Manzil</a></li>
-                            <!--<a class="cta-btn" href="#">Call To Action</a>-->
-                  </ul>
-          
-                </div>
-
-      </div>
-    </section>
-    <!-- #call-to-action -->
-
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <section id="portfolio"  class="section-bg" >
+  </section><!-- #intro --><section id="portfolio"  class="section-bg" >
       <div class="container">
 
         <header class="section-header">
@@ -429,306 +242,24 @@
 
         
         <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="http://aijmf.in/resources/assets/img/gallery/14.jpg" class="img-fluid" alt="" style="height: 100%">
-                <a href="http://aijmf.in/resources/assets/img/gallery/14.jpg" data-lightbox="portfolio" data-title="" class="link-preview" title="Preview" style="margin-left:35px;border-radius: 0px"><i class="ion ion-eye"></i></a>
-              </figure>
+          
+            <div class="col-lg-4 col-md-4 portfolio-item filter-app wow fadeInUp">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="http://aijmf.in/resources/uploads/gallery/7a88a9bcd1c80b5a15df1a981bf399af.jpg" class="img-fluid" alt="" style="height: 100%">
+                  <a href="http://aijmf.in/resources/uploads/gallery/7a88a9bcd1c80b5a15df1a981bf399af.jpg" data-lightbox="portfolio" data-title="" class="link-preview" title="Preview" style="margin-left:25px;border-radius: 0px"><i class="ion ion-eye"></i></a>
+                </figure>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                  <img src="http://aijmf.in/resources/assets/img/gallery/9.jpg" class="img-fluid" alt="" style="height: 100%">
-                <a href="http://aijmf.in/resources/assets/img/gallery/9.jpg" class="link-preview" data-lightbox="portfolio" data-title="" title="Preview" style="margin-left:35px;border-radius: 0px"><i class="ion ion-eye"></i></a>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="http://aijmf.in/resources/assets/img/gallery/10.jpg" class="img-fluid" alt="" style="height: 100%">
-                <a href="http://aijmf.in/resources/assets/img/gallery/11.jpg" class="link-preview" data-lightbox="portfolio" data-title="" title="Preview" style="margin-left:35px;border-radius: 0px"><i class="ion ion-eye"></i></a>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="http://aijmf.in/resources/assets/img/gallery/11.jpg" class="img-fluid" alt="" style="height: 100%">
-                <a href="http://aijmf.in/resources/assets/img/gallery/11.jpg" class="link-preview" data-lightbox="portfolio" data-title="" title="Preview" style="margin-left:35px;border-radius: 0px"><i class="ion ion-eye"></i></a>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="http://aijmf.in/resources/assets/img/gallery/12.jpg" class="img-fluid" alt="" style="height: 100%">
-                <a href="http://aijmf.in/resources/assets/img/gallery/12.jpg" class="link-preview" data-lightbox="portfolio" data-title="" title="Preview" style="margin-left:35px;border-radius: 0px"><i class="ion ion-eye"></i></a>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="http://aijmf.in/resources/assets/img/gallery/13.jpg" class="img-fluid" alt="" style="height: 100%">
-                <a href="http://aijmf.in/resources/assets/img/gallery/13.jpg" class="link-preview" data-lightbox="portfolio" data-title="" title="Preview" style="margin-left:35px;border-radius: 0px"><i class="ion ion-eye"></i></a>
-              </figure>
-            </div>
-          </div>
-       </div>
-        <div class="row">
-           <div class="col-lg-12">
-            <a href="http://aijmf.in/web/web_gallery" class="pull-right">
-            <button type="button" class="btn btn-success" id="button">View More...</button>
-            </a>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">1</li>
-              <li data-filter=".filter-app">2</li>
-              <li data-filter=".filter-card">3</li>
-              <li data-filter=".filter-web">4</li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
+                 </div>
+      </div>
     </section><!-- #portfolio -->
 
 
-    <!--==========================
-      Team Section
-    ============================-->
-    <section id="team">
-      <div class="container">
-        <div class="section-header wow fadeInUp">
-          <h3>BOARD OF DIRECTORS</h3>
-          <p>Our Committee Members</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. LALIT GANDHI</h4>
-                  <span>National President</span>
-                </div>
-              </div>
-              
-
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. LALIT GANDHI</a>
-                    <p style="font-size: 13px">National President</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. SANDIP BHANDARI</h4>
-                  <span>National General Secretory</span>
-
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. SANDIP BHANDARI</a>
-                    <p style="font-size: 13px">National General Secretory</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. DINESH JAIN</h4>
-                  <span>National Vice President</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. DINESH JAIN</a>
-                    <p style="font-size: 13px">National Vice President</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR.K.MAHENDER JAIN SOLANKI</h4>
-                  <span>National Vice President</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR.K.MAHENDER JAIN SOLANKI</a>
-                    <p style="font-size: 13px">National Vice President</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/5.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR.S.KRISHNACHAND CHORDIA</h4>
-                  <span>National Vice President</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR.S.KRISHNACHAND CHORDIA</a>
-                    <p style="font-size: 13px">National Vice President</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/6.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. VIPIN JAIN</h4>
-                  <span>National Vice President</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. VIPIN JAIN</a>
-                    <p style="font-size: 13px">National Vice President</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/7.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. MAHAVIR GATH</h4>
-                  <span>National Treasurer</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. MAHAVIR GATH</a>
-                    <p style="font-size: 13px">National Treasurer</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-            
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/8.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. VIMAL JAIN</h4>
-                  <span>National Joint Secretary</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. VIMAL JAIN</a>
-                    <p style="font-size: 13px">National Joint Secretary</p>
-                </h6>
-              </div>
-            </div>
-          </div>
+    
 
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/9.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. LAXMIKANT KHABIYA </h4>
-                  <span>National Joint Secretary</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. LAXMIKANT KHABIYA</a>
-                    <p style="font-size: 13px">National Joint Secretary</p>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="http://aijmf.in/resources/assets/img/team/10.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>MR. SOURABH BHANDARI</h4>
-                  <span>National Joint Secretary</span>
-                </div>
-              </div>
-              <div class="bg-white" style="padding-top: 10px;border: 1px gray solid">
-                <h6>
-                    <a href="#">MR. SOURABH BHANDARI</a>
-                    <p style="font-size: 13px">National Joint Secretary</p>
-                </h6>
-              </div>
-            </div>
-          </div> 
-            
-        </div>
-            
-      </div>
-    </section>
-    <!-- #team -->
-  </main>
-<!--  <div class="container">
-  <h2>Large Modal</h2>
-   Trigger the modal with a button 
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
-
-   Modal 
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-            <img src="" alt="image" style="width: 100%;" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
   <!--==========================
     Footer
   ============================-->
